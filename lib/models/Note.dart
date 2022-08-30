@@ -1,6 +1,6 @@
 class Note {
-  String Title;
-  String Description;
+  String title;
+  String description;
 
-  Note(this.Title, this.Description);
+  Note(this.title, this.description);
 }

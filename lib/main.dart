@@ -1,21 +1,23 @@
 import 'package:flutter/material.dart';
-import 'pages/MainPage.dart';
+import 'pages/main_page.dart';
+import 'models/Note.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  final List<Note> _notes = [
+    Note("Note 1", "Description 1"),
+    Note("Note 2", "Description 2"),
+    Note("Note 3", "Description 3"),
+    Note("Note 4", "Description 4"),
+  ];
+
+  MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-          appBar: AppBar(
-            title: const Text("Notes"),
-          ),
-          body: MainPage()),
-    );
+    return MaterialApp(home: MainPage(_notes));
   }
 }
