@@ -12,6 +12,13 @@ class MyApp extends StatelessWidget {
     Note("Note 2", "Description 2"),
     Note("Note 3", "Description 3"),
     Note("Note 4", "Description 4"),
+    Note("Note 4", "Description 4"),
+    Note("Note 4", "Description 4"),
+    Note("Note 4", "Description 4"),
+    Note("Note 4", "Description 4"),
+    Note("Note 4", "Description 4"),
+    Note("Note 4", "Description 4"),
+    Note("Note 4", "Description 4"),
   ];
 
   MyApp({Key? key}) : super(key: key);
